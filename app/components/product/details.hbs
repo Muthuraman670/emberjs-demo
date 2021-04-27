@@ -1,0 +1,20 @@
+<div class="product-details">
+        <h3>Beats Solo wireless Headphones</h3>
+        <div class="text-warning">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        </div>
+         <section>
+        <del class="small text-black-50">$199.95</del>
+        <i class="text-danger font-weight-bold">$150.25</i>
+    </section>
+    <ul class="button">
+     <li><button class="btn btn-primary btn-sm" {{on "click"  (fn this.change 1)}}>+</button></li>
+     <li><h6>{{this.value}}</h6></li>
+     <li><button class="btn btn-primary btn-sm" {{ on "click" (fn this.change -1)}}>-</button></li>
+    </ul>
+ </div>
+ {{!-- {{on "click" (fn @onChangeColor "black")}} --}}
